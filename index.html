@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>DrivenEats</title>
+</head>
+<body>
+
+    <div class="corpo">
+        <div class="vazio">
+        <div class="cabecalho">
+            <div class="titulo">DrivenEats</div>
+            <div class="subtitulo">Sua comida em 6 minutos</div>  
+        </div>
+        </div>
+        <div class="container">
+        <div class="texto-pedido">Primeiro, seu prato</div>
+        <div id="comidas" class="caixa-comida">
+            <div id="frango" class="opcoes-pedidos margin-lef19" onclick="escolherComida(frango)">
+                <img src="./frango_yin_yang 1.png" >
+                <h1>Frango Yin Yang</h1>
+                <div class="texto-pedidos">
+                <p>Um pouco de batata, um pouco de salada</p>
+                </div>
+                <div class="precos">
+                    <h2 h2>R$ 14,90</h2>
+                    <ion-icon class="check-icon" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+            <div id="Parmegiana" class="opcoes-pedidos" onclick="escolherComida(Parmegiana)">
+                <img src="./parmegiana.jpg" >
+                <h1>Parmegiana</h1>
+                <p>Acompanha batata e arroz</p>
+                <div class="precos">
+                    <h2 class="preco">R$ 18,90</h2>
+                    <ion-icon class="check-icon" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+            <div id="Omelete" class="opcoes-pedidos" onclick="escolherComida(Omelete)">
+                <img src="./imagensProjeto3/omelete.jpg" >
+                <h1>Omelete</h1>
+                <p>Feito com presunto e muitoo queijo</p>
+                <div class="precos">
+                    <h2 h2>R$ 12,90</h2>
+                    <ion-icon class="check-icon" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+            <div id="Lasanha" class="opcoes-pedidos margin-right14" onclick="escolherComida(Lasanha)">
+                <img src="./imagensProjeto3/lasanha.jpg" >
+                <h1>Lasanha</h1>
+                <p>O mais vendido da casa</p>
+                <div class="precos">
+                    <h2 h2>R$ 15,90</h2>
+                    <ion-icon class="check-icon" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="texto-bebida">Agora, sua bebida</div>
+        <div id="bebidas" class="caixa-comida">
+            <div id="Coca" class="opcoes-pedidos margin-lef19" onclick="escolherBebida(Coca)">
+                <img src="./coquinha_gelada 1.png" >
+                <h1>Coquinha gelada</h1>
+                <p>Lata 350ml</p>
+                <div class="precos">
+                    <h2>R$ 4,90</h2>
+                    <ion-icon class="check-icon" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+            <div id="Guaraná" class="opcoes-pedidos" onclick="escolherBebida(Guaraná)">
+                <img src="./imagensProjeto3/Guarana.jpg" >
+                <h1>Guaraná</h1>
+                <p>Lata 350ml</p>
+                <div class="precos">
+                    <h2>R$ 4,50</h2>
+                    <ion-icon class="check-icon" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+            <div id="Pepsi" class="opcoes-pedidos" onclick="escolherBebida(Pepsi)">
+                <img src="./imagensProjeto3/pepsizero.jpg" >
+                <h1>Pepsi Black</h1>
+                <p>Lata 350ml</p>
+                <div class="precos">
+                    <h2>R$ 4,00</h2>
+                    <ion-icon class="check-icon" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+            <div id="Suco" class="opcoes-pedidos margin-right14" onclick="escolherBebida(Suco)">
+                <img src="./imagensProjeto3/sucolaranka.jpg" >
+                <h1>Suco de laranja</h1>
+                <p>Garrafa 500ml</p>
+                <div class="precos">
+                    <h2>R$ 9,90</h2>
+                    <ion-icon class="check-icon" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="texto-bebida">Por fim, sua sobremesa</div>
+        <div id="sobremesa" class="caixa-comida">
+            <div id="Pudim" class="opcoes-pedidos margin-lef19" onclick="escolherSobremesa(Pudim)">
+                <img src="./pudim 1.png" >
+                <h1>Pudim</h1>
+                <p>Apenas pudim</p>
+                <div class="precos">
+                    <h2>R$ 7,90</h2>
+                    <ion-icon class="check-icon" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+            <div id="Bombom" class="opcoes-pedidos" onclick="escolherSobremesa(Bombom)">
+                <img src="./imagensProjeto3/bombom.jpg" >
+                <h1>Bombom</h1>
+                <p>Ninho trufado</p>
+                <div class="precos">
+                    <h2>R$ 3,90</h2>
+                    <ion-icon class="check-icon" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+            <div id="Palha" class="opcoes-pedidos" onclick="escolherSobremesa(Palha)">
+                <img src="./imagensProjeto3/palhaitaliana.jpg" >
+                <h1>Palha italiana</h1>
+                <p>Com nutella</p>
+                <div class="precos">
+                    <h2>R$ 8,90</h2>
+                    <ion-icon class="check-icon" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+            <div id="Bolo" class="opcoes-pedidos margin-right14" onclick="escolherSobremesa(Bolo)">
+                <img src="./imagensProjeto3/bolodepote.jpg" >
+                <h1>Bolo de pote</h1>
+                <p>Bolo de cenoura</p>
+                <div class="precos">
+                    <h2>R$ 5,90</h2>
+                    <ion-icon class="check-icon" name="checkmark-circle"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="vazio">
+        <div class="botao-pedido">
+            <button id="botao" class="selecionar-ref" disabled="true" onclick="finalizarPedido()">
+                <div class="texto1">Selecione os 3 itens</div>
+
+                   <div class="texto2">para fechar o pedido</div>
+            </button>
+        </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="java.js"></script>
+</body>
+
+</html>
